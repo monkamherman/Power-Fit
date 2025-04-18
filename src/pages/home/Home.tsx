@@ -5,6 +5,8 @@ import Features from './component/Feature'
 import Programs from './component/Programe'
 import Trainers from './component/Trainer'
 import Testimonials from './component/Testimonial'
+import CTA from './component/CTA'
+import Contact from './component/Contact'
 
 const Home: React.FC = () => {
     return (
@@ -22,6 +24,8 @@ const Home: React.FC = () => {
                 <Programs />
                 <Trainers />
                 <Testimonials/>
+                <Contact/>
+                <CTA/>
             </>
         </>
     )

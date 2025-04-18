@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.dark .hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80');
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.trainer-card:hover .trainer-img {
+  transform: scale(1.05);
+}
+
+.theme-toggle {
+  transition: all 0.3s ease;
+}
+
+/* Dark mode overrides */
+.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.dark .bg-white {
+  background-color: #2d3748;
+}
+
+.dark .text-gray-800 {
+  color: #f7fafc;
+}
+
+.dark .text-gray-600 {
+  color: #cbd5e0;
+}
+
+.dark .bg-gray-100 {
+  background-color: #4a5568;
+}
+
+.dark .bg-gray-50 {
+  background-color: #2d3748;
+}
+
+.dark .border-gray-300 {
+  border-color: #4a5568;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

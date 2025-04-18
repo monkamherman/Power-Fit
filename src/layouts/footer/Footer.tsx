@@ -18,10 +18,79 @@ import { TextAnimate } from "@/components/ui/text-animate";
 
 const Footer: React.FC = () => {
   return (
-    <footer className='w-full border-t border-t-foreground/80'>
-      footer
-
-      {/* Profile */}
+    <footer className="bg-gray-800 text-white pt-16 pb-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 className="text-xl font-bold mb-4 flex items-center">
+            <i className="fas fa-dumbbell mr-2 text-red-500"></i> PowerFit
+          </h3>
+          <p className="text-gray-400">
+            La salle de sport premium à Paris depuis 2012. Équipements haut de gamme et coachs experts pour vous accompagner.
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Navigation</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-white transition duration-300">Accueil</a></li>
+            <li><a href="#programmes" className="text-gray-400 hover:text-white transition duration-300">Programmes</a></li>
+            <li><a href="#coachs" className="text-gray-400 hover:text-white transition duration-300">Nos coachs</a></li>
+            <li><a href="#contact" className="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Services</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="text-gray-400 hover:text-white transition duration-300">Musculation</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white transition duration-300">Cours collectifs</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white transition duration-300">Coaching perso</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white transition duration-300">Espace détente</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
+          <p className="text-gray-400 mb-4">
+            Abonnez-vous pour recevoir nos offres spéciales et conseils fitness.
+          </p>
+          <form className="flex">
+            <input 
+              type="email" 
+              placeholder="Votre email" 
+              className="px-4 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-900 w-full"
+            />
+            <button 
+              type="submit" 
+              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-r-md"
+            >
+              <i className="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p className="text-gray-400 mb-4 md:mb-0">
+          &copy; 2023 PowerFit. Tous droits réservés.
+        </p>
+        <div className="flex space-x-6">
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+            <i className="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
       <div className="border-t border-t-foreground/40 w-full px-1 py-[3px] space-x-1 font-light text-sm flex justify-center bg-foreground/50">
         <span>Designed and developped by</span>
 

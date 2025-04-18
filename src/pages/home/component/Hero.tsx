@@ -1,7 +1,7 @@
 // components/Hero.js
 import React from 'react';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="hero-bg h-screen flex items-center justify-center text-white">
       <div className="text-center px-4 max-w-4xl mx-auto">
